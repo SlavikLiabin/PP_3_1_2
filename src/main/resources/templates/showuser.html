@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User information</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a th:href="@{/logout}" >Link for logout</a>
+    </nav>
+</header>
+<table>
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Username</th>
+        <th scope="col">Password</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${id}"/>
+        <td th:text="${username}"/>
+        <td th:text="${password}"/>
+        <td th:text="${name}"/>
+        <td th:text="${age}"/>
+        <td th:text="${roles}"/>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
